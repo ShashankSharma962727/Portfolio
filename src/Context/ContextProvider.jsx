@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 
 const portfolioContext = createContext(null);
-
 const ContextProvider = (prop) => {
   const [isDark, setIsDark] = useState(true);
 
@@ -13,3 +12,4 @@ const ContextProvider = (prop) => {
 };
 
 export default ContextProvider;
+export {portfolioContext};
