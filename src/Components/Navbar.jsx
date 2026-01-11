@@ -27,28 +27,18 @@ const Navbar = () => {
       <nav
         className={` flex justify-between items-center w-[70%] m-auto border ${colors.border} p-2 rounded-2xl ${colors.navBg} `}
       >
-        <h1 className={` text-xl lg:text-3xl font-bold ${colors.primaryText} `}>
+        <h1 className={` text-xl lg:text-3xl font-bold ${colors.primaryText} font-comic`}>
           Shashank
         </h1>
 
         <div
-          className={`items-center text-lg lg:text-xl justify-between w-[40%] hidden xl:flex`}
+          className={`items-center text-lg lg:text-xl justify-between w-[40%] hidden xl:flex font-montserrat`}
         >
-          <a className={`${colors.hoverText}`} href="#">
-            Home
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            About
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Skills
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Projects
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Contact
-          </a>
+          <a className={`${colors.hoverText}`} href="#">Home</a>
+          <a className={`${colors.hoverText}`} href="#">About</a>
+          <a className={`${colors.hoverText}`} href="#">Skills</a>
+          <a className={`${colors.hoverText}`} href="#">Projects</a>
+          <a className={`${colors.hoverText}`} href="#">Contact</a>
         </div>
 
         <span
@@ -66,23 +56,13 @@ const Navbar = () => {
 
       {navIsOpen && (
         <div
-          className={` w-[70%] m-auto border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl mt-2 fixed left-[15%] text-lg`}
+          className={` w-[70%] m-auto border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl mt-2 fixed left-[15%] text-lg font-montserrat`}
         >
-          <a className={`${colors.hoverText}`} href="#">
-            Home
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            About
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Skills
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Projects
-          </a>
-          <a className={`${colors.hoverText}`} href="#">
-            Contact
-          </a>
+          <a className={`${colors.hoverText}`} href="#">Home</a>
+          <a className={`${colors.hoverText}`} href="#">About</a>
+          <a className={`${colors.hoverText}`} href="#">Skills</a>
+          <a className={`${colors.hoverText}`} href="#">Projects</a>
+          <a className={`${colors.hoverText}`} href="#">Contact</a>
         </div>
       )}
     </>

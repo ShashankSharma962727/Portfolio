@@ -19,11 +19,6 @@ function App() {
       <main className={`w-full min-h-screen ${colors.mainBg} ${darkColors.secondaryText} p-3`}>
         <Navbar/>
         <Home/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
       </main>
     </>
   )
