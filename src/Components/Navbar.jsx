@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={` flex justify-between items-center w-[70%] m-auto border ${colors.border} p-2 rounded-2xl ${colors.navBg} `}
+        className={` flex justify-between items-center w-[70%] border ${colors.border} p-2 rounded-2xl ${colors.navBg} fixed top-3 left-1/2 -translate-x-1/2 z-10`}
       >
         <h1 className={` text-xl lg:text-3xl font-bold ${colors.primaryText} font-comic`}>
           Shashank
@@ -56,7 +56,7 @@ const Navbar = () => {
 
       {navIsOpen && (
         <div
-          className={` w-[70%] m-auto border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl mt-2 fixed left-[15%] text-lg font-montserrat`}
+          className={` w-[70%] border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl top-15 fixed left-[15%] text-lg font-montserrat z-10`}
         >
           <a className={`${colors.hoverText}`} href="#">Home</a>
           <a className={`${colors.hoverText}`} href="#">About</a>

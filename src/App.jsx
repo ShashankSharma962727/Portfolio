@@ -16,9 +16,10 @@ function App() {
 
   return (
     <>
-      <main className={`w-full min-h-screen ${colors.mainBg} ${darkColors.secondaryText} p-3`}>
+      <main className={`w-full min-h-screen ${colors.mainBg} ${darkColors.secondaryText}`}>
         <Navbar/>
         <Home/>
+        <About/>
       </main>
     </>
   )
