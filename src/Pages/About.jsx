@@ -9,10 +9,9 @@ const About = () => {
   const colors = isDark ? darkColors : lightColors;
 
   return (
-    <div className=" w-[90%] m-auto font-montserrat ">
-      <h1 className={`text-3xl font-bold underline text-center ${colors.activeText}`}>
-        About Me
-      </h1>
+    <div className=" w-[90%] m-auto font-montserrat mt-20">
+      <h1 className='text-3xl font-bold text-center'>About <span className={`${colors.activeText}`}>Me</span></h1>
+
       <p className={`${colors.secondaryText} leading-relaxed text-md mt-5 text-center`}>
         Hello, I'm Shashank Sharma, a frontend developer who builds attractive, user-friendly, and responsive websites. I work with ReactJS to create clean and modern interfaces.
         <br /> Even though I am new to the field, I have worked on several projects and I always improve my skills by learning new technologies. My goal is to develop stable, production-level websites and grow as a frontend developer.

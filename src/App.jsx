@@ -20,6 +20,10 @@ function App() {
         <Navbar/>
         <Home/>
         <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
       </main>
     </>
   )

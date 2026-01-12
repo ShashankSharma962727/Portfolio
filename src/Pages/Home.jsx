@@ -22,9 +22,9 @@ const Home = () => {
 
   return (
     <>
-    <div className="w-[90%] min-h-screen m-auto font-montserrat flex flex-col items-center justify-center">
-      <h1 className={`text-4xl font-semibold ${colors.primaryText}`}>Hi, I'm <span className="text-purple-500">Shashank.</span></h1>
-      <p className={`text-2xl ${colors.secondaryText}`}>Frontend Developer</p>
+    <div className="w-[90%] m-auto font-montserrat flex flex-col items-center pt-20 text-center">
+      <h1 className={`text-3xl font-semibold ${colors.primaryText}`}>Hi, I'm <span className="text-purple-500">Shashank.</span></h1>
+      <p className={`text-xl ${colors.secondaryText}`}>Frontend Developer</p>
 
       {/*Social Media Icons*/}
       <div className="flex items-center justify-center">
@@ -36,7 +36,6 @@ const Home = () => {
           })
         }
       </div>
-
 
       {/*Hero Image*/}
       <div className="w-[70%] max-w-100 relative">
