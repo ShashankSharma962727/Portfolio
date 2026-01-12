@@ -22,7 +22,7 @@ const Footer = () => {
           href="https://github.com/yourusername"
           target="_blank"
           rel="noreferrer"
-          className="text-xl"
+          className="text-xl hover:text-purple-500"
         >
           <FaGithub/>
         </a>
@@ -30,13 +30,13 @@ const Footer = () => {
           href="https://linkedin.com/in/yourusername"
           target="_blank"
           rel="noreferrer"
-          className="text-xl"
+          className="text-xl hover:text-purple-500"
         >
           <FaLinkedin/>
         </a>
         <a
           href="mailto:youremail@example.com"
-          className="text-xl"
+          className="text-xl hover:text-purple-500"
         >
           <MdEmail/>
         </a>

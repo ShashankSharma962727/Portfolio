@@ -9,13 +9,15 @@ const Projects = () => {
   const colors = isDark ? darkColors : lightColors;
 
   return (
-    <div className='w-[90%] m-auto font-montserrat flex flex-col items-center pt-20 text-center'>
-      <h1 className='text-3xl font-bold text-center'>My <span className={`${colors.activeText}`}>Projects</span></h1>
-      {
+    <div id="project" className='w-[90%] m-auto font-montserrat flex flex-col items-center text-center mt-20'>
+      <h1 className='text-3xl font-bold text-center mt-20 mb-10'>My <span className={`${colors.activeText}`}>Projects</span></h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-20 gap-10 ">
+        {
         projectsData.map((e) => {
           return <ProjectsCard key={e.id} title={e.title} disc={e.description} stack={e.tech}/>
         })
       }
+      </div>
     </div>
   )
 }

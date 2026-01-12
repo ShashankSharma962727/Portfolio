@@ -32,13 +32,13 @@ const Navbar = () => {
         </h1>
 
         <div
-          className={`items-center text-lg lg:text-xl justify-between w-[40%] hidden xl:flex font-montserrat`}
+          className={`items-center text-lg lg:text-xl justify-between w-[40%] lg:w-[50%] xl:w-[40%] hidden lg:flex font-montserrat`}
         >
-          <a className={`${colors.hoverText}`} href="#">Home</a>
-          <a className={`${colors.hoverText}`} href="#">About</a>
-          <a className={`${colors.hoverText}`} href="#">Skills</a>
-          <a className={`${colors.hoverText}`} href="#">Projects</a>
-          <a className={`${colors.hoverText}`} href="#">Contact</a>
+          <a className={`${colors.hoverText}`} href="#home">Home</a>
+          <a className={`${colors.hoverText}`} href="#about">About</a>
+          <a className={`${colors.hoverText}`} href="#skill">Skills</a>
+          <a className={`${colors.hoverText}`} href="#project">Projects</a>
+          <a className={`${colors.hoverText}`} href="#contact">Contact</a>
         </div>
 
         <span
@@ -47,7 +47,7 @@ const Navbar = () => {
           <LuSun />
         </span>
         <span
-          className={`border ${colors.border}  p-1 rounded-lg text-lg cursor-pointer xl:hidden`}
+          className={`border ${colors.border}  p-1 rounded-lg text-lg cursor-pointer lg:hidden`}
           onClick={() => setNavIsOpen((prev) => !prev)}
         >
           {navIsOpen ? <RxCross2 /> : <IoMenu />}
@@ -58,11 +58,11 @@ const Navbar = () => {
         <div
           className={` w-[90%] border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl top-18 fixed left-1/2 -translate-x-1/2 text-lg font-montserrat z-10`}
         >
-          <a className={`${colors.hoverText}`} href="#">Home</a>
-          <a className={`${colors.hoverText}`} href="#">About</a>
-          <a className={`${colors.hoverText}`} href="#">Skills</a>
-          <a className={`${colors.hoverText}`} href="#">Projects</a>
-          <a className={`${colors.hoverText}`} href="#">Contact</a>
+          <a className={`${colors.hoverText}`} href="#home">Home</a>
+          <a className={`${colors.hoverText}`} href="#about">About</a>
+          <a className={`${colors.hoverText}`} href="#skill">Skills</a>
+          <a className={`${colors.hoverText}`} href="#project">Projects</a>
+          <a className={`${colors.hoverText}`} href="#contact">Contact</a>
         </div>
       )}
     </>

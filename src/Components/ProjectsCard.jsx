@@ -9,7 +9,7 @@ const ProjectsCard = ({ title, disc, stack }) => {
 
   return (
     <div
-      className={`w-full rounded-2xl border ${colors.border} ${colors.navBg} mt-10 flex flex-col p-5 justify-around font-montserrat text-center`}
+      className={`w-full max-w-80 rounded-2xl border ${colors.cardBorder} ${colors.cardBg} flex flex-col p-5 justify-around font-montserrat text-center`}
     >
       <div className="aspect-[16/9] w-full overflow-hidden rounded-xl">
         <img

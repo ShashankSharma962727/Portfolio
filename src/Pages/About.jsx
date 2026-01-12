@@ -1,29 +1,73 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { darkColors, lightColors } from "../Styles/Color";
 import { portfolioContext } from "../Context/ContextProvider";
-import about from '../assets/Charcter/backgroundShap.png'
+import about from "../assets/Charcter/backgroundShap.png";
 import { FaDownload } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const About = () => {
   const { isDark } = useContext(portfolioContext);
   const colors = isDark ? darkColors : lightColors;
-
+  const notify = () => toast.success("CV Downloaded!");
+  
   return (
-    <div className=" w-[90%] m-auto font-montserrat mt-20">
-      <h1 className='text-3xl font-bold text-center'>About <span className={`${colors.activeText}`}>Me</span></h1>
+    <div id="about" className="scroll-mt-20 w-[90%] m-auto font-montserrat mt-20">
+      <h1 className="text-3xl font-bold text-center">
+        About <span className={`${colors.activeText}`}>Me</span>
+      </h1>
 
-      <p className={`${colors.secondaryText} leading-relaxed text-md mt-5 text-center`}>
-        Hello, I'm Shashank Sharma, a frontend developer who builds attractive, user-friendly, and responsive websites. I work with ReactJS to create clean and modern interfaces.
-        <br /> Even though I am new to the field, I have worked on several projects and I always improve my skills by learning new technologies. My goal is to develop stable, production-level websites and grow as a frontend developer.
-      </p>
+      <div className="w-full flex flex-col items-center lg:flex-row-reverse lg:justify-center lg:items-center gap-10">
+        <div className="flex flex-col items-center lg:items-start lg:w-[40%] md:w-[80%]">
+          <p
+            className={`${colors.secondaryText} leading-relaxed text-base md:text-lg lg:text-xl mt-5 text-center lg:text-left`}
+          >
+            Hello, I'm Shashank Sharma, a frontend developer who builds
+            attractive, user-friendly, and responsive websites. I work with
+            ReactJS to create clean and modern interfaces.
+            <br /> Even though I am new to the field, I have worked on several
+            projects and I always improve my skills by learning new
+            technologies. My goal is to develop stable, production-level
+            websites and grow as a frontend developer.
+          </p>
 
-      <div className="w-full relative">
-        <img src={about} alt="" />
+          <button
+            className={`hidden lg:flex ${colors.button} w-50 py-2 mt-6 rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)]`}
+            onClick={notify}
+          >
+            <a
+              href="./Shashank_CV.pdf"
+              target="_blank"
+              download
+              className="w-full h-full flex items-center justify-center gap-2"
+            >
+              <FaDownload />
+              Download CV
+            </a>
+          </button>
+          <ToastContainer theme="dark"/>
+        </div>
+
+        <div className="w-full lg:w-[50%] flex flex-col items-center">
+          <div className="w-full max-w-90 md:max-w-120 lg:max-w-140 relative">
+            <img src={about} alt="" className="w-full" />
+          </div>
+
+          <button
+            className={`flex lg:hidden ${colors.button} w-50 py-2 mt-6 rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)]`}
+            onClick={notify}
+          >
+            <a
+              href="./Shashank_CV.pdf"
+              target="_blank"
+              download
+              className="w-full h-full flex items-center justify-center gap-2"
+            >
+              <FaDownload />
+              Download CV
+            </a>
+          </button>
+        </div>
       </div>
-
-      <button className={`flex items-center justify-center gap-2 ${colors.button} w-50 py-2 m-auto rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)] mt-2`}>
-        <span><FaDownload/></span>Download CV
-      </button>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const SkillCard = ({ skill, icon, proficiency }) => {
   const colors = isDark ? darkColors : lightColors;
   return (
     <div
-        className={`w-full h-40 rounded-2xl border ${colors.border} ${colors.navBg} mt-10 flex flex-col p-5 justify-around`}
+        className={`w-full max-w-80 h-40 rounded-2xl border ${colors.cardBorder} ${colors.cardBg} flex flex-col p-5 justify-around`}
       >
         <div className="w-full flex items-center gap-3">
           <div
@@ -30,7 +30,7 @@ const SkillCard = ({ skill, icon, proficiency }) => {
           </span>
         </div>
         <div
-          className={`w-full h-4 rounded-xl border ${colors.border} flex flex-col`}
+          className={`w-full h-3 rounded-xl border ${colors.cardBorder} flex flex-col`}
         >
           <div
             className={`h-full ${colors.button} rounded-xl`}
