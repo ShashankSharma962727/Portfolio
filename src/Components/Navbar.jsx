@@ -4,9 +4,10 @@ import { RxCross2 } from "react-icons/rx";
 import { portfolioContext } from "../Context/ContextProvider";
 import { darkColors, lightColors } from "../Styles/Color";
 import { IoMenu } from "react-icons/io5";
+import { color } from "motion";
 
 const Navbar = () => {
-  const { isDark } = useContext(portfolioContext);
+  const { isDark, setIsDark } = useContext(portfolioContext);
   const colors = isDark ? darkColors : lightColors;
   const [navIsOpen, setNavIsOpen] = useState(false);
 
@@ -22,10 +23,14 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleTheme = () => {
+      setIsDark((prev) => (!prev));
+  }
+
   return (
     <>
       <nav
-        className={` flex justify-between items-center w-[90%] border ${colors.border} p-2 rounded-2xl ${colors.navBg} fixed top-3 left-1/2 -translate-x-1/2 z-10`}
+        className={` flex justify-between items-center w-[90%] border ${colors.border} ${colors.secondaryText} p-2 rounded-2xl ${colors.navBg} fixed top-3 left-1/2 -translate-x-1/2 z-10`}
       >
         <h1 className={` text-2xl lg:text-3xl font-bold ${colors.primaryText} font-comic`}>
           Shashank<span className={`${colors.activeText}`}>.</span>
@@ -43,6 +48,7 @@ const Navbar = () => {
 
         <span
           className={`border ${colors.border} p-1 rounded-full ${colors.button} text-lg lg:text-xl`}
+          onClick={handleTheme}
         >
           <LuSun />
         </span>
@@ -56,7 +62,7 @@ const Navbar = () => {
 
       {navIsOpen && (
         <div
-          className={` w-[90%] border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.navBg} rounded-2xl top-18 fixed left-1/2 -translate-x-1/2 text-lg font-montserrat z-10`}
+          className={` w-[90%] border ${colors.border} flex flex-col items-center justify-center gap-2 py-3 ${colors.secondaryText} ${colors.navBg} rounded-2xl top-18 fixed left-1/2 -translate-x-1/2 text-lg font-montserrat z-10`}
         >
           <a className={`${colors.hoverText}`} href="#home">Home</a>
           <a className={`${colors.hoverText}`} href="#about">About</a>

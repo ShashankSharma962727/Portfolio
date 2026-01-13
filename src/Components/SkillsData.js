@@ -1,41 +1,64 @@
-
 import html from '../assets/Icons/html.png'
 import css from '../assets/Icons/css.png'
-import vc from '../assets/Icons/github.png'
+import js from '../assets/Icons/js.png'
+import github from '../assets/Icons/github.png'
 import react from '../assets/Icons/react.png'
 import tailwind from '../assets/Icons/tailwind.png'
-import js from '../assets/Icons/js.png'
+import git from '../assets/Icons/git.png'
+import bootstrap from '../assets/Icons/bootstrap.png'
+import framer from '../assets/Icons/framer.png'
+import redux from '../assets/Icons/redux.png'
+import java from '../assets/Icons/java.png'
+import firebase from '../assets/Icons/firebase.png'
 
 export const skillsData = [
     {
         skill: "HTML",
-        proficiency: 90,
         icon: html
     },
     {
         skill: "CSS",
-        proficiency: 85,
         icon: css
     },
     {
         skill: "JavaScript",
-        proficiency: 80,
         icon: js
     },
     {
         skill: "React",
-        proficiency: 80,
         icon: react
     },
     {
         skill: "Tailwind",
-        proficiency: 90,
         icon: tailwind
     },
     {
-        skill: "Version Control",
-        proficiency: 85,
-        icon: vc
+        skill: "Github",
+        icon: github
+    },
+    {
+        skill: "Git",
+        icon: git
+    },
+    {
+        skill: "Bootstrap",
+        icon: bootstrap
+    },
+    {
+        skill: "Framer",
+        icon: framer
+    },
+    {
+        skill: "Redux",
+        icon: redux
+    },
+    {
+        skill: "Java",
+        icon: java
+    },
+    {
+        skill: "Firebase",
+        icon: firebase
     },
 
 ]
