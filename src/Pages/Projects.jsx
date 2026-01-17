@@ -20,7 +20,7 @@ const Projects = () => {
         className="grid grid-cols-1 md:grid-cols-2 lg:gap-20 gap-10 ">
         {
         projectsData.map((e) => {
-          return <ProjectsCard key={e.id} title={e.title} disc={e.description} stack={e.tech}/>
+          return <ProjectsCard key={e.id} title={e.title} disc={e.description} stack={e.tech} image={e.image} liveLink={e.live} codeLink={e.github}/>
         })
       }
       </motion.div>

@@ -23,21 +23,23 @@ const Contact = () => {
       import.meta.env.VITE_SERVICE_ID,
       import.meta.env.VITE_TEMPLATE_ID,
       form.current,
-      import.meta.env.VITE_PUBLIC_KEY
+      { publicKey: import.meta.env.VITE_PUBLIC_KEY }
     )
     .then(
       () => {
-        toast.success("Message sent.", { position: "top-left" });
-        setLoading(false);
+        toast.success("Message sent");
         form.current.reset();
+        setLoading(false);
+        console.log("Form Submitted");
       },
       (error) => {
-        console.error("EmailJS Error:", error);
-        toast.error("Failed: ");
+        toast.error("Failed to send");
+        console.log(error);
         setLoading(false);
       }
     );
 };
+
 
 
   return (
@@ -61,10 +63,7 @@ const Contact = () => {
           </p>
           <form
           ref={form}
-          onSubmit={(e) => {
-            e.preventDefault()
-            console.log("Send")
-          }}
+          onSubmit={sendEmail}
             className={`w-full max-w-110 border ${colors.border} ${colors.navBg} p-3 rounded-2xl`}
           >
             <input
