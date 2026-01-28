@@ -23,7 +23,7 @@ export const projectsData = [
     live: "https://portfolio-rose-psi-42.vercel.app/",
     github: "https://github.com/ShashankSharma962727/Portfolio",
     },
-//React.js, Javascript(ES6), Tailwind css, API Integration (axios), React router, Framer Motion, 
+
     {
     id: 3,
     title: "world intelligence platform",
