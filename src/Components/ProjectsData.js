@@ -1,7 +1,6 @@
 import clima from '../assets/Projects/Clima.JPG'
 import portfolio from '../assets/Projects/Portfolio.JPG'
 import world from '../assets/Projects/world-analysis.JPG'
-import soon from '../assets/Projects/soon.JPG'
 
 export const projectsData = [
     {
@@ -38,7 +37,7 @@ export const projectsData = [
     id: 4,
     title: "Coming Soon",
     description: "Coming Soon",
-    image: soon,
+    image: world,
     tech: [],
     live: "https://yourportfolio.com",
     github: "https://github.com/username/portfolio",
