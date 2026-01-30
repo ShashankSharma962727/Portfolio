@@ -3,13 +3,11 @@ import { darkColors, lightColors } from "../Styles/Color";
 import { portfolioContext } from "../Context/ContextProvider";
 import about from "../assets/Charcter/backgroundShap.png";
 import { FaDownload } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
 import { motion } from "motion/react";
 
 const About = () => {
   const { isDark } = useContext(portfolioContext);
   const colors = isDark ? darkColors : lightColors;
-  const notify = () => toast.success("CV Downloaded!");
   
   return (
     <div id="about" className={`scroll-mt-20 ${colors.secondaryText} w-[90%] m-auto font-montserrat mt-20 z-1`}>
@@ -38,7 +36,6 @@ const About = () => {
 
           <motion.button
             className={`hidden lg:flex ${colors.button} w-50 py-2 mt-6 rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)]`}
-            onClick={notify}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -51,7 +48,6 @@ const About = () => {
               Download CV
             </a>
           </motion.button>
-          <ToastContainer theme="dark"/>
         </motion.div>
 
         <motion.div
@@ -67,14 +63,12 @@ const About = () => {
 
           <motion.button
             className={`flex lg:hidden ${colors.button} w-50 py-2 mt-6 rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)]`}
-            onClick={notify}
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
             <a
               href="./Shashank_CV.pdf"
               target="_blank"
-              download
               className="w-full h-full flex items-center justify-center gap-2"
             >
               <FaDownload />
