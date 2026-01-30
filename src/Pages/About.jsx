@@ -45,7 +45,6 @@ const About = () => {
             <a
               href="./Shashank_CV.pdf"
               target="_blank"
-              download
               className="w-full h-full flex items-center justify-center gap-2"
             >
               <FaDownload />

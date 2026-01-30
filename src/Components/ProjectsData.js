@@ -1,16 +1,17 @@
 import clima from '../assets/Projects/Clima.JPG'
 import portfolio from '../assets/Projects/Portfolio.JPG'
 import world from '../assets/Projects/world-analysis.JPG'
+import shopmate from '../assets/Projects/Shopmate.JPG'
 
 export const projectsData = [
     {
     id: 1,
-    title: "Clima - Weather Dashboard",
-    description: "A responsive user intractive weather dashboard app that show realtime and forecats weather.",
-    image: clima,
-    tech: ["React", "Tailwind", "Recharts", "Geolocation", "Context API", "Weather API"],
-    live: "https://clima-weather-dashboard.vercel.app/",
-    github: "https://github.com/ShashankSharma962727/Clima-Weather-Dashboard",
+    title: "Shpomate - Ecommerce app",
+    description: "A responsive user intractive and complete responsive Ecommerce website with admin dashboard, authentication, cart funtionality and protected routes using React, redux, Tailwind and firebase.",
+    image: shopmate,
+    tech: ["React", "Tailwind", "Redux", "Firebase", "Context API", "Firestore Database", "Firebase Authentication"],
+    live: "https://shopmate-711f6.web.app/",
+    github: "https://github.com/ShashankSharma962727/ShopMate---Ecommerce-Web-App",
     },
 
     {
@@ -35,11 +36,11 @@ export const projectsData = [
 
     {
     id: 4,
-    title: "Coming Soon",
-    description: "Coming Soon",
-    image: world,
-    tech: [],
-    live: "https://yourportfolio.com",
-    github: "https://github.com/username/portfolio",
+    title: "Clima - Weather Dashboard",
+    description: "A responsive user intractive weather dashboard app that show realtime and forecats weather.",
+    image: clima,
+    tech: ["React", "Tailwind", "Recharts", "Geolocation", "Context API", "Weather API"],
+    live: "https://clima-weather-dashboard.vercel.app/",
+    github: "https://github.com/ShashankSharma962727/Clima-Weather-Dashboard",
     },
 ]

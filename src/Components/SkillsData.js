@@ -10,6 +10,10 @@ import framer from '../assets/Icons/framer.png'
 import redux from '../assets/Icons/redux.png'
 import java from '../assets/Icons/java.png'
 import firebase from '../assets/Icons/firebase.png'
+import node from '../assets/Icons/node.png'
+import api from '../assets/Icons/api.png'
+import postman from '../assets/Icons/postman.png'
+import express from '../assets/Icons/express.png'
 
 export const skillsData = [
     {
@@ -59,6 +63,22 @@ export const skillsData = [
     {
         skill: "Firebase",
         icon: firebase
+    },
+    {
+        skill: "NodeJs",
+        icon: node
+    },
+    {
+        skill: "ExpressJs",
+        icon: express
+    },
+    {
+        skill: "Rest API",
+        icon: api
+    },
+    {
+        skill: "Postman",
+        icon: postman
     },
 
 ]
