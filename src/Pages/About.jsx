@@ -23,16 +23,23 @@ const About = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="flex flex-col items-center lg:items-start lg:w-[40%] md:w-[80%]">
           <p
-            className={`${colors.secondaryText} leading-relaxed text-base md:text-lg lg:text-xl mt-5 text-center lg:text-left`}
+            className={`${colors.secondaryText} leading-relaxed text-sm md:text-base mt-5 text-center lg:text-left`}
           >
             Hello, I'm Shashank Sharma, a frontend developer who builds
             attractive, user-friendly, and responsive websites. I work with
-            ReactJS to create clean and modern interfaces.
+            React.Js, Next.Js, Tailwind CSS to create clean and modern interfaces.
             <br /> Even though I am new to the field, I have worked on several
             projects and I always improve my skills by learning new
-            technologies. My goal is to develop stable, production-level
-            websites and grow as a frontend developer.
+            technologies.
           </p>
+          <p
+            className={`${colors.secondaryText} leading-relaxed text-sm md:text-base mt-5 text-center lg:text-left`}
+          >
+            Currently I focused on backend with NodeJs, Express and MongoDB for improve my skills as a full stack developer. 
+            <br />My goal is to develop stable, production-level
+            websites and grow as a Full stack developer.
+          </p>
+
 
           <motion.button
             className={`hidden lg:flex ${colors.button} w-50 py-2 mt-6 rounded-2xl border ${colors.border} shadow-[0_6px_0_rgba(0,0,0,0.3)]`}
@@ -42,7 +49,7 @@ const About = () => {
             <a
               href="./Shashank_CV.pdf"
               target="_blank"
-              className="w-full h-full flex items-center justify-center gap-2"
+              className="w-full h-full flex text-base items-center justify-center gap-2"
             >
               <FaDownload />
               Download CV

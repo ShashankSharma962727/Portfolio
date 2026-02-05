@@ -1,5 +1,5 @@
 import clima from '../assets/Projects/Clima.JPG'
-import portfolio from '../assets/Projects/Portfolio.JPG'
+import DrMaya from '../assets/Projects/DrMaya.JPG'
 import world from '../assets/Projects/world-analysis.JPG'
 import shopmate from '../assets/Projects/Shopmate.JPG'
 
@@ -16,12 +16,12 @@ export const projectsData = [
 
     {
     id: 2,
-    title: "Portfolio Website",
-    description: "Created a responsive personal portfolio site using React and deployed it on Vercel to showcase skills, projects, and contact info.",
-    image: portfolio,
-    tech: ["React", "Tailwind", "Context API","Emial.js", "Framer Motion"],
-    live: "https://portfolio-rose-psi-42.vercel.app/",
-    github: "https://github.com/ShashankSharma962727/Portfolio",
+    title: "Dr.Maya Therapy Center",
+    description: "Modern therapy website built with Next.js and Tailwind CSS, emphasizing calm aesthetics, accessibility, and responsive design.",
+    image: DrMaya,
+    tech: ["Next js", "Tailwind", "Vercel", "Framer Motion"],
+    live: "https://dr-maya-reynolds-therapy-center.vercel.app/",
+    github: "https://github.com/ShashankSharma962727/grow-my-therapy-lilac-clone",
     },
 
     {

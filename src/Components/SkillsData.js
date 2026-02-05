@@ -14,71 +14,81 @@ import node from '../assets/Icons/node.png'
 import api from '../assets/Icons/api.png'
 import postman from '../assets/Icons/postman.png'
 import express from '../assets/Icons/express.png'
+import mongoDB from '../assets/Icons/mongoDB.png'
+import nextJS from '../assets/Icons/NextJS.png'
 
 export const skillsData = [
     {
-        skill: "HTML",
-        icon: html
-    },
-    {
-        skill: "CSS",
-        icon: css
-    },
-    {
-        skill: "JavaScript",
-        icon: js
-    },
-    {
-        skill: "React",
-        icon: react
-    },
-    {
-        skill: "Tailwind",
-        icon: tailwind
-    },
-    {
-        skill: "Github",
-        icon: github
-    },
-    {
-        skill: "Git",
-        icon: git
-    },
-    {
-        skill: "Bootstrap",
-        icon: bootstrap
-    },
-    {
-        skill: "Framer",
-        icon: framer
-    },
-    {
-        skill: "Redux",
-        icon: redux
-    },
-    {
-        skill: "Java",
-        icon: java
-    },
-    {
-        skill: "Firebase",
-        icon: firebase
-    },
-    {
-        skill: "NodeJs",
-        icon: node
-    },
-    {
-        skill: "ExpressJs",
-        icon: express
-    },
-    {
-        skill: "Rest API",
-        icon: api
-    },
-    {
-        skill: "Postman",
-        icon: postman
-    },
+    skill: "HTML",
+    icon: html
+},
+{
+    skill: "CSS",
+    icon: css
+},
+{
+    skill: "JavaScript",
+    icon: js
+},
+{
+    skill: "React",
+    icon: react
+},
+{
+    skill: "Next JS",
+    icon: nextJS
+},
+{
+    skill: "Redux",
+    icon: redux
+},
+{
+    skill: "Tailwind",
+    icon: tailwind
+},
+{
+    skill: "Bootstrap",
+    icon: bootstrap
+},
+{
+    skill: "Framer",
+    icon: framer
+},
+{
+    skill: "NodeJs",
+    icon: node
+},
+{
+    skill: "ExpressJs",
+    icon: express
+},
+{
+    skill: "Rest API",
+    icon: api
+},
+{
+    skill: "MongoDB",
+    icon: mongoDB
+},
+{
+    skill: "Firebase",
+    icon: firebase
+},
+{
+    skill: "Postman",
+    icon: postman
+},
+{
+    skill: "Git",
+    icon: git
+},
+{
+    skill: "Github",
+    icon: github
+},
+{
+    skill: "Java",
+    icon: java
+}
 
 ]

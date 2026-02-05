@@ -23,7 +23,7 @@ const ProjectsCard = ({ title, disc, stack, image, liveLink, codeLink }) => {
       <h3 className={`${colors.activeText} text-lg font-semibold mt-1`}>
         {title}
       </h3>
-      <p className={`${colors.secondaryText}`}>{disc}</p>
+      <p className={`${colors.secondaryText} text-sm`}>{disc}</p>
 
       <ul
         className={`w-full ${colors.secondaryText} text-xs flex gap-2 items-center mt-1 flex-wrap`}
