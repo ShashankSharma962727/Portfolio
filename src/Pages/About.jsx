@@ -47,7 +47,7 @@ const About = () => {
             whileTap={{ scale: 0.9 }}
           >
             <a
-              href="./Shashank_CV.pdf"
+              href="./Resume.pdf"
               target="_blank"
               className="w-full h-full flex text-base items-center justify-center gap-2"
             >
@@ -74,7 +74,7 @@ const About = () => {
             whileTap={{ scale: 0.9 }}
           >
             <a
-              href="./Shashank_CV.pdf"
+              href="./Resume.pdf"
               target="_blank"
               className="w-full h-full flex items-center justify-center gap-2"
             >
